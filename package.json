@@ -1,0 +1,11 @@
+{
+  "name": "lerna-example-with-hooks",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {},
+  "private": true,
+  "workspaces": [
+    "component-library",
+    "example-demo"
+  ]
+}
