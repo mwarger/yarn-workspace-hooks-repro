@@ -2,7 +2,14 @@
   "name": "lerna-example-with-hooks",
   "version": "1.0.0",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "lib": "cd component-library && yarn start",
+    "demo": "cd example-demo && yarn start",
+    "start": "run-p lib demo"
+  },
   "private": true,
   "workspaces": [
     "component-library",
